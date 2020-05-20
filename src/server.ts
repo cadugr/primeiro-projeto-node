@@ -1,5 +1,9 @@
+import 'reflect-metadata';
 import express from 'express';
 import routes from './routes';
+
+// aqui só estamos carregando o arquivo, do qual não exportamos nada.
+import './database';
 
 const app = express();
 
